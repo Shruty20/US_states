@@ -1,6 +1,6 @@
 # US_states
 
-The "US STATE GAME" is a Python program that combines turtle graphics and data processing to create an interactive game.
+The "US STATE GAME" is a Python program that combines turtle graphics and data processing to create an interactive game using pandas library.
 The game presents a blank map of the United States and prompts the user to guess the names of the states. 
 
 
