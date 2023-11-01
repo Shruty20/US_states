@@ -16,10 +16,7 @@ while len(guessed_states) < 50:   #states are 50 in total
     answer_state = screen.textinput(title=f"{len(guessed_states)}/50 States correct",
                                     prompt="What's the state's name?").title()  #title to capitalize first letter automatically
     if answer_state == "Exit":
-        missing_state = []           # to print details of missed states
-        for state in all_states:
-            if state not in guessed_states:
-                missing_state.append(state)
+        missing_state = [state for state in all_states if state not in guessed_state]           # to print details of missed states
         new_data = pandas.DataFrame(missing_state)
         new_data.to_csv("states_missed")                         #convert file to csv format
         break
